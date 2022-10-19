@@ -1,0 +1,55 @@
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 4px dashed #eee;
+}
+
+main {
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 695px){
+        width: 80%;
+    }
+
+    &__Buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.result{
+    width: 50%;
+    text-align: center;
+
+    @media only screen and (max-width: 695px){
+        width: 80%;
+        margin-top: 5rem;
+    }
+
+    &__score{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+    }
+}
+
+footer{
+    font-size: 1rem;
+    text-align: center;
+    padding: 3rem;
+    letter-spacing: 0.1rem;
+}
