@@ -14,3 +14,7 @@ html {
 body {
     background-color: #ca9b80;
 }
+
+.pattern-vertical-lines-xl{
+    background-image: repeating-linear-gradient(to right, rgba(209, 212, 208, 0.443), rgba(209, 212, 208, 0.443) 1px, transparent 1px, transparent) !important;
+}

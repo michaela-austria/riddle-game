@@ -88,7 +88,7 @@ window.addEventListener('load', function () {
 
         displayScore(20);
         changeBackground('#222');
-        displayMessage('Sagutin ang bugtong');
+        displayMessage('Panibagong Tanong');
         document.querySelector('.sagot').value = '';
         questionBox.textContent = `"${data.riddle[randomNumber].tanong}"`;
         answer = data.riddle[randomNumber].sagot.toLowerCase();
