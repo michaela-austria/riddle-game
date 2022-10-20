@@ -12,12 +12,42 @@ const data = {
         {
             "tanong": "Isang pirasong tela lang ito, sinasaluduhan ng mga sundalo.",
             "sagot": "Watawat"
+        },
+        {
+            "tanong": "Maikling landasin, di maubos lakarin.",
+            "sagot": "Anino"
+        },
+        {
+            "tanong": "Hindi hayop, hindi tao, pumupulupot sa tiyan mo.",
+            "sagot": "Sinturon"
+        },
+        {
+            "tanong": "Dalawang batong itim, malayo ang nararating",
+            "sagot": "Mata"
+        },
+        {
+            "tanong": "Kay lapit-lapit na sa mata, di mo pa rin makita",
+            "sagot": "Tenga"
+        },
+        {
+            "tanong": "Lumuluha walang mata, lumalakad walang paa",
+            "sagot": "Ballpen"
+        },
+        {
+            "tanong": "Ang bintna ay pito, naisasara lamang ay tatlo",
+            "sagot": "Mukha"
+        },
+        {
+            "tanong": "Isang prinsesa, punong-puno ng mata.",
+            "sagot": "Pinya"
         }
+
     ]
 }
 
+console.log("Question Bank: ", data.riddle.length);
 
-let randomNumber = Math.trunc(Math.random() * 3);
+let randomNumber = Math.trunc(Math.random() * data.riddle.length);
 let score = 20;
 let highscore = 0;
 
@@ -84,7 +114,7 @@ window.addEventListener('load', function () {
 
     resetButton.addEventListener('click', function(){
         score = 20;
-        randomNumber = Math.trunc(Math.random() * 3);
+        randomNumber = Math.trunc(Math.random() * data.riddle.length);
 
         displayScore(20);
         changeBackground('#222');
